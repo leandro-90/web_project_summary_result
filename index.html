@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <style>
+    @font-face {
+      font-family: "HankenGrotesk";
+      src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    }
+
+    body {
+      background-color: #00bd911c;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      font-family: "HankenGrotesk";
+    }
+
+    main {
+      background-color: white;
+      border-radius: 20px;
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      display: flex;
+    }
+
+    .result {
+      border-radius: 20px;
+      background-color: #1124d4dd;
+      text-align: center;
+      color: white;
+    }
+
+    .result,
+    .summary {
+      padding: 30px;
+    }
+
+    .title {
+      margin-top: 0;
+    }
+
+    .pointsResult {
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.101), rgba(0, 0, 0, 0.274));
+      width: 100px;
+      padding: 30px;
+      margin: 0 auto 40px;
+      border-radius: 60%;
+    }
+
+    .resultFinal {
+      font-size: 3em;
+      margin: 0;
+      border-radius: 50%;
+    }
+
+    .opacity {
+      opacity: 60%;
+    }
+
+    .text {
+      padding-top: 3%;
+    }
+
+    .pointsResult .opacity {
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    ul li {
+      display: flex;
+      width: 230px;
+      margin: 15px 0;
+      padding: 0 20px;
+    }
+
+    .reaction {
+      color: #ff5757;
+    }
+
+    .reactionFund {
+      border-radius: 30px;
+      background-color: #ff575714;
+    }
+
+    .memory {
+      color: #ffb01f;
+    }
+
+    .memoryFund {
+      border-radius: 30px;
+      background-color: #ffb11f1e;
+    }
+
+    .verbal {
+      color: #00bd91;
+    }
+
+    .verbalFund {
+      border-radius: 30px;
+      background-color: #00bd9119;
+    }
+
+    .visual {
+      color: #1125d4;
+    }
+
+    .visualFund {
+      border-radius: 30px;
+      background-color: #1124d410;
+    }
+
+    .reaction,
+    .memory,
+    .verbal,
+    .visual,
+    .number {
+      font-weight: 700;
+      margin-right: auto;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+
+    .button {
+      background-color: #303b5a;
+      border: none;
+      color: white;
+      border-radius: 30px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="result">
+      <p class="title opacity">Your Result</p>
+      <div class="pointsResult">
+        <p class="resultFinal">
+          76
+        </p>
+        <p class="opacity">of 100</p>
+      </div>
+      <p>Great</p>
+      <p class="opacity text">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    <section class="summary">
+      <h3 class="title">Summary</h3>
+      <ul>
+        <li class="reactionFund">
+          <img src="assets/images/icon-reaction.svg">
+          <p class="reaction">Reaction</p>
+          <p>
+            <span class="number">80</span> / 100
+          </p>
+        </li>
+        <li class="memoryFund">
+          <img src="assets/images/icon-memory.svg">
+          <p class="memory">Memory</p>
+          <p>
+            <span class="number">92</span> / 100
+          </p>
+        </li>
+        <li class="verbalFund">
+          <img src="assets/images/icon-verbal.svg">
+          <p class="verbal">Verbal</p>
+          <p>
+            <span class="number">61</span> / 100
+          </p>
+        </li>
+        <li class="visualFund">
+            <p class="p">
+              <img src="assets/images/icon-visual.svg">
+              <p class="visual">Visual</p>
+            </p>
+          <p>
+            <span class="number">73</span> / 100
+          </p>
+        </li>
+      </ul>
+      <a href="#">
+        <div class="button">Continue</div>
+      </a>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+
+</html>
